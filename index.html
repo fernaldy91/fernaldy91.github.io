@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>W3 CSS</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<img src="atas.jpg" style="width:1370px;">
+
+<div class="w3-bar w3-black">
+	<button class="w3-bar-item w3-button" onclick="opengambar('profile')">Profile</button>
+	<button class="w3-bar-item w3-button" onclick="opengambar('mobil')">Mobil</button>
+	<button class="w3-bar-item w3-button" onclick="opengambar('unikommart')">Unikom Mart</button>
+	<button class="w3-bar-item w3-button" onclick="opengambar('kampus')">Kampus</button>
+	<button class="w3-bar-item w3-button" onclick="opengambar('pemandangan')">Pemandangan</button>
+</div>
+
+<div id="profile" class="w3-container gambar" style="display:none">
+	<h2>Profile</h2>
+	<img class="w3-animate-left" src="2x3.jpg">
+	<hr>
+	<h2>Fernaldy.M - 10121144 - IF4</h2>
+</div>
+
+<div id="mobil" class="w3-container gambar" style="display:none">
+	<h2>Mobil</h2>
+	<img class="w3-animate-fading" src="img_car.jpg">
+</div>
+
+<div id="unikommart" class="w3-container gambar" style="display:none">
+	<h2>Unikom Mart</h2>
+	<img class="w3-animate-bottom" src="minum.jpg">
+</div>
+
+<div id="kampus" class="w3-container gambar" style="display:none">
+	<h2>Kampus</h2>
+	<img class="w3-animate-top" src="gedung.jpg">
+</div>
+
+<div id="pemandangan" class="w3-container gambar" style="display:none">
+	<h2>Pemandangan</h2>
+	<img class="w3-animate-zoom" src="img_5terre.jpg">
+</div>
+
+<script>
+function opengambar(namagambar) {
+ var i;
+ var x = document.getElementsByClassName("gambar");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ document.getElementById(namagambar).style.display = "block"; 
+}
+</script>
+</body>
+</html>
